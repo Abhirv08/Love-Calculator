@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="lovecalculator.css">
+  </head>
+  <body>
+
+    <div class="head">
+      <p class="greet">Welcome to the site</p>
+      <p class="info">Here you can check your love percentage for your crush, partner and <br>whomever you like and think there can be
+        chemistry between you two.</p>
+    </div>
+
+    <form class="myform" name="myform"> 
+        Your Name: <input  class="entry" type="text" name="Name1" >
+        Partner's Name: <input  class="entry" type="text" name="Name2">
+    </form>
+    <div id="btn">
+        <input class="button" type='button' onclick= "lovepercentage()" value='calculate'>
+    </div>
+    <div id="number">  
+      <p> </p>
+    </div>
+    <script>
+      var name1=document.myform.Name1.value;
+      var name2=document.myform.Name2.value;
+      if(name1==null || name2==null){
+        alert("Enter names first");
+      }
+      else{
+        function lovepercentage(){
+         var x = Math.random() ;
+         var y =Math.floor(x*100)+1;
+         document.getElementById("number").innerHTML="Love Percentage between you two is "+y+"% ."; 
+       }
+      }
+    </script>
+  </body>
+</html>

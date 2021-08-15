@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  background: #1E9600;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF0000, #FFF200, #1E9600);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF0000, #FFF200, #1E9600); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+
+.head {
+  position: relative;
+  height: 20rem;
+  margin: 10px 10px;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+
+.greet {
+  font-size: 60px;
+  background: -webkit-linear-gradient(#000046, #dd2476);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.info {
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 35px;
+}
+
+
+.myform {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  margin-top: 10px;
+}
+
+
+.entry {
+  width: 30rem;
+  color: white;
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 3px 3px;
+  border: none;
+  border-radius: 5px;
+
+}
+
+
+#btn{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  background: #833ab4; 
+  background: -webkit-linear-gradient(  to right,  #fcb045,  #fd1d1d,  #833ab4  ); 
+  background: linear-gradient(  to right,  #fcb045,  #fd1d1d,  #833ab4  ); 
+  padding: 4px 3px;
+  width: 10rem;  
+  color: white;
+}
+
+.button:hover{
+  border: 2px outset rgb(165, 10, 212);
+ 
+}
+
+#number{
+  margin: 10px 25%;
+  font-size: 30px;
+  font-weight: bolder;
+  background-image: none;
+}
+
+input::before{
+  font-size: 20px;
+}
